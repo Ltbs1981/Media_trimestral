@@ -4,12 +4,11 @@ namespace mediaTrimestral
 {
     class Calculadora
     {
-        public double nt1, nt2, nt3;
+        public double nota1, nota2, nota3;
 
         public double CalcularMedia()
         {
-            double media = nt1 + nt2 + nt3;
-            return media;
+            return nota1 + nota2 + nota3; 
         }
     }
 }

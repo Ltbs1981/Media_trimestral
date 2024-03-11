@@ -8,17 +8,17 @@ namespace mediaTrimestral
         {
             Console.WriteLine("Programa cálculo de médias trimestrais.");
             Console.WriteLine("Digite a nota entre 0 e 10 do 1º trimestre");
-            double nt1 = double.Parse(Console.ReadLine()) * 3.0;
+            double notaPrimeiroTrimestre = double.Parse(Console.ReadLine()) * 3.0;
             Console.WriteLine("Digite a nota entre 0 e 10 do 2º trimestre");
-            double nt2 = double.Parse(Console.ReadLine()) * 3.5;
+            double notaSegundoTrimestre = double.Parse(Console.ReadLine()) * 3.5;
             Console.WriteLine("Digite a nota entre 0 e 10 do 3º trimestre");
-            double nt3 = double.Parse(Console.ReadLine()) * 3.5;
+            double notaTerceiroTrimestre = double.Parse(Console.ReadLine()) * 3.5;
 
             Calculadora notas = new Calculadora();
 
-            notas.nt1 = nt1;
-            notas.nt2 = nt2;
-            notas.nt3 = nt3;
+            notas.nota1= notaPrimeiroTrimestre;
+            notas.nota2= notaSegundoTrimestre;
+            notas.nota3= notaTerceiroTrimestre;
 
             double media = notas.CalcularMedia();
 
